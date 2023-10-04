@@ -24,4 +24,51 @@
 <pattern>HOLA</pattern>
 <template><srai>HELLO</srai></template>
 </category>
+
+<category>
+<pattern>What time is it?</pattern>
+<template><srai>It's currently <get_time />.</srai></template>
+</category>
+
+<category>
+<pattern>What's the weather like today?</pattern>
+<template><srai>The weather today is <get_weather />.</srai></template>
+</category>
+
+<category>
+<pattern>What should I have for dinner?</pattern>
+<template> <srai>How about trying <get_random_dinner_suggestion /> for dinner tonight?</srai>
+</template>
+</category>
+
+<category>
+<pattern>Can you tell me the latest news?</pattern>
+<template><srai>Sure, here are some of the top headlines: <get_latest_news /></srai></template>
+</category>
+
+<category>
+<pattern>Where is the nearest coffee shop?</pattern>
+<template><srai>The nearest coffee shop is located at <get_nearest_coffee_shop_location />.</srai></template>
+</category>
+
+<category>
+<pattern>What's the best way to get to the airport?</pattern>
+<template><srai>The most convenient way to get to the airport is by <get_best_transport_mode_to_airport />.</srai></template>
+</category>
+
+<category>
+<pattern>How can I stay fit and healthy?</pattern>
+<template><srai>You can maintain your fitness and health by <get_fitness_tips />.</srai></template>
+</category>
+
+<category>
+<pattern>Recommend a good movie to watch.</pattern>
+<template><srai>I recommend watching "<get_movie_recommendation />." It's a great choice for a movie night!</srai></template>
+</category>
+
+<category>
+<pattern>What's the latest smartphone on the market?</pattern>
+<template><srai>The latest smartphone on the market is the "<get_latest_smartphone_model />." It has some impressive features!</srai></template>
+</category>
 </aiml>
+

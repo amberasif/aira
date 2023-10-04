@@ -11,6 +11,16 @@
 </category>
 
 <category>
+<pattern>*</pattern>
+<template><srai>Sorry, I am not trained to answer this question.</srai></template>
+</category>
+
+<category>
+<pattern>Bye</pattern>
+<template><srai>THANKYOU FOR USING AIRA</srai></template>
+</category>
+
+<category>
 <pattern>HI THERE</pattern>
 <template><srai>HELLO</srai></template>
 </category>
@@ -70,5 +80,132 @@
 <pattern>What's the latest smartphone on the market?</pattern>
 <template><srai>The latest smartphone on the market is the "<get_latest_smartphone_model />." It has some impressive features!</srai></template>
 </category>
+
+<category>
+<pattern>How's the traffic today?</pattern>
+<template><srai>The traffic today is <get_traffic_status />. It's currently <get_traffic_time_estimate /> to reach your destination.</srai></template>
+</category>
+
+<category>
+<pattern>What's a good way to relieve stress?</pattern>
+<template><srai>A great way to relieve stress is by <get_stress_relief_tips />.</srai></template>
+</category>
+
+<category>
+<pattern>Where can I find a good deal on electronics?</pattern>
+<template><srai>You can find great deals on electronics at <get_electronics_deal_location />. Don't forget to check online deals too!</srai></template>
+</category>
+
+<category>
+<pattern>Can you suggest a fun hobby to try?</pattern>
+<template><srai>How about trying <get_random_hobby_suggestion />? It can be a great way to relax and learn something new.</srai></template>
+</category>
+
+<category>
+<pattern>What's a good book to read for personal development?</pattern>
+<template><srai>I recommend reading "<get_personal_development_book_suggestion />." It's a valuable resource for self-improvement.</srai></template>
+</category>
+
+<category>
+<pattern>How can I plan a memorable family outing?</pattern>
+<template><srai>Planning a memorable family outing involves <get_family_outing_planning_tips />.</srai></template>
+</category>
+
+<category>
+<pattern>Do you have a recipe for a delicious dessert?</pattern>
+<template><srai>Sure, here's a recipe for a mouthwatering <get_random_dessert_recipe />.</srai></template>
+</category>
+
+<category>
+<pattern>What's the best way to care for a new puppy?</pattern>
+<template><srai>Caring for a new puppy involves <get_puppy_care_tips />. It's important to provide love and attention.</srai></template>
+</category>
+
+<category>
+<pattern>How can I find a good therapist?</pattern>
+<template><srai>Finding a good therapist involves <get_therapist_finding_tips />. You can also ask for recommendations from friends or check online directories.</srai></template>
+</category>
+
+<category>
+<pattern>What are some techniques for managing stress?</pattern>
+<template><srai>Managing stress can be achieved through <get_stress_management_techniques />. It's important to find what works best for you.</srai></template>
+</category>
+
+<category>
+<pattern>How can I cope with anxiety?</pattern>
+<template><srai>Coping with anxiety involves <get_anxiety_coping_strategies />. Remember to reach out to a mental health professional for support.</srai></template>
+</category>
+
+<category>
+<pattern>What can I do if I'm feeling depressed?</pattern>
+<template><srai>If you're feeling depressed, it's important to <get_depression_support_tips /> and consider talking to a therapist or counselor.</srai></template>
+</category>
+
+<category>
+<pattern>What are some self-care practices for mental health?
+</pattern>
+<template><srai>Practicing self-care for mental health includes <get_self_care_practices />. Prioritize self-care to improve your overall well-being.</srai></template>
+</category>
+
+<category>
+<pattern>How can I develop healthy coping strategies?</pattern>
+<template><srai>Developing healthy coping strategies involves <get_coping_strategies_development_tips />. Therapy can be a valuable resource in this journey.</srai></template>
+</category>
+
+<category>
+<pattern>What is mindfulness, and how can I practice it?</pattern>
+<template><srai>Mindfulness is <get_mindfulness_definition />. You can practice it by <get_mindfulness_practices /> for better mental health.</srai></template>
+</category>
+
+<category>
+<pattern> How can I support a friend or family member who is struggling with their mental health?</pattern>
+<template> <srai>Supporting a loved one with their mental health involves <get_emotional_support_tips />. Encourage them to seek professional help if needed.</srai></template>
+</category>
+
+<category>
+<pattern>Can you tell me a joke?</pattern>
+<template><srai>Sure, here's a joke for you: <get_random_joke /></srai></template>
+</category>
+
+<category>
+<pattern>Tell me something funny to brighten my day.</pattern>
+<template><srai>Of course! Here's a funny one: <get_random_funny_quote /></srai></template>
+</category>
+
+<category>
+<pattern>Can you suggest a daily morning routine?</pattern>
+<template><srai>A healthy morning routine might include <get_morning_routine_suggestion />. It sets a positive tone for the day.</srai></template>
+</category>
+
+<category>
+<pattern>What's a good workout routine for beginners?</pattern>
+<template><srai>A beginner's workout routine should include <get_beginner_workout_suggestion />. It's important to start gradually.</srai></template>
+</category>
+
+<category>
+<pattern> How can I create an effective study routine?</pattern>
+<template><srai>Creating an effective study routine involves <get_study_routine_tips />. Consistency and breaks are key.</srai></template>
+</category>
+
+<category>
+<pattern>What's a relaxing bedtime routine?</pattern>
+<template><srai>A relaxing bedtime routine might include <get_bedtime_routine_suggestion />. It promotes better sleep.</srai></template>
+</category>
+
+<category>
+<pattern>Tell me an interesting historical fact.</pattern>
+<template><srai>Did you know that <get_random_historical_fact />?</srai></template>
+</category>
+
+<category>
+<pattern>Who is your favorite historical figure?</pattern>
+<template><srai>One of my favorite historical figures is <get_random_historical_figure />. They had a significant impact on history.</srai></template>
+</category>
+
+<category>
+<pattern>What was a major event in world history?</pattern>
+<template><srai>A major event in world history was <get_major_world_history_event />. It shaped the course of nations and cultures.</srai></template>
+</category>
+
 </aiml>
 

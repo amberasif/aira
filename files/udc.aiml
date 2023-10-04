@@ -10,10 +10,7 @@
 <template><srai>HELLO</srai></template>
 </category>
 
-<category>
-<pattern>*</pattern>
-<template><srai>Sorry, I am not trained to answer this question.</srai></template>
-</category>
+
 
 <category>
 <pattern>Bye</pattern>
@@ -180,6 +177,31 @@
 <category>
 <pattern>Can you suggest a daily morning routine?</pattern>
 <template><srai>A healthy morning routine might include <get_morning_routine_suggestion />. It sets a positive tone for the day.</srai></template>
+</category>
+
+<category>
+<pattern>What's a good workout routine for beginners?</pattern>
+<template><srai>A beginner's workout routine should include <get_beginner_workout_suggestion />. It's important to start gradually.</srai></template>
+</category>
+
+<category>
+<pattern> How can I create an effective study routine?</pattern>
+<template><srai>Creating an effective study routine involves <get_study_routine_tips />. Consistency and breaks are key.</srai></template>
+</category>
+
+<category>
+<pattern>What's a relaxing bedtime routine?</pattern>
+<template><srai>A relaxing bedtime routine might include <get_bedtime_routine_suggestion />. It promotes better sleep.</srai></template>
+</category>
+
+<category>
+<pattern>Tell me an interesting historical fact.</pattern>
+<template><srai>Did you know that <get_random_historical_fact />?</srai></template>
+</category>
+
+<category>
+<pattern>Who is your favorite historical figure?</pattern>
+<template><srai>One of my favorite historical figures is <get_random_historical_figure />. They had a significant impact on history.</srai></template>
 </category>
 
 <category>

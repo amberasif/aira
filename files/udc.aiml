@@ -42,7 +42,7 @@
 
 <category>
 <pattern>What's the weather like today?</pattern>
-<template><srai>The weather today is <get_weather />.</srai></template>
+<template>The weather today is <get_weather />.</template>
 </category>
 
 <category>

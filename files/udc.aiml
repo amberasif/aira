@@ -36,6 +36,11 @@
 </category>
 
 <category>
+<pattern>How are you</pattern>
+<template><srai>I am Good</srai></template>
+</category>
+
+<category>
 <pattern>What time is it?</pattern>
 <template><srai>It's currently <get_time />.</srai></template>
 </category>

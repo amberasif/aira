@@ -66,25 +66,5 @@
 <template><srai>The most convenient way to get to the airport is by <get_best_transport_mode_to_airport />.</srai></template>
 </category>
 
-<category>
-<pattern>How can I stay fit and healthy?</pattern>
-<template><srai>You can maintain your fitness and health by <get_fitness_tips />.</srai></template>
-</category>
-
-<category>
-<pattern>Recommend a good movie to watch.</pattern>
-<template><srai>I recommend watching "<get_movie_recommendation />." It's a great choice for a movie night!</srai></template>
-</category>
-
-<category>
-<pattern>What's the latest smartphone on the market?</pattern>
-<template><srai>The latest smartphone on the market is the "<get_latest_smartphone_model />." It has some impressive features!</srai></template>
-</category>
-
-<category>
-<pattern>How's the traffic today?</pattern>
-<template><srai>The traffic today is <get_traffic_status />. It's currently <get_traffic_time_estimate /> to reach your destination.</srai></template>
-</category>
-
 </aiml>
 

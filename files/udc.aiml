@@ -37,7 +37,7 @@
 
 <category>
 <pattern>What time is it?</pattern>
-<template><srai>It's currently <get_time />.</srai></template>
+<template>It's currently <get_time />.</template>
 </category>
 
 <category>

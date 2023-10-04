@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
+<category>
+<pattern>HELLO</pattern>
+<template>Hi there!</template>
+</category>
+
+<category>
+<pattern>HI</pattern>
+<template><srai>HELLO</srai></template>
+</category>
+
+<category>
+<pattern>HI THERE</pattern>
+<template><srai>HELLO</srai></template>
+</category>
+
+<category>
+<pattern>HOWDY</pattern>
+<template><srai>HELLO</srai></template>
+</category>
+
+<category>
+<pattern>HOLA</pattern>
+<template><srai>HELLO</srai></template>
+</category>
 </aiml>

@@ -207,5 +207,10 @@
 <template><srai>A major event in world history was <get_major_world_history_event />. It shaped the course of nations and cultures.</srai></template>
 </category>
 
+<category>
+<pattern>*</pattern>
+<template><srai>Sorry, I am not trained to answer this question.</srai></template>
+</category>
+
 </aiml>
 

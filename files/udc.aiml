@@ -10,8 +10,6 @@
 <template><srai>HELLO</srai></template>
 </category>
 
-
-
 <category>
 <pattern>Bye</pattern>
 <template><srai>THANKYOU FOR USING AIRA</srai></template>

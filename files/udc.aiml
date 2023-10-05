@@ -1,212 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
-<category>
-<pattern>HELLO</pattern>
-<template>Hi there!</template>
-</category>
+<aiml version="2.0">
 
-<category>
-<pattern>HI</pattern>
-<template>HELLO</template>
-</category>
+    <!-- Greeting patterns -->
+    <category>
+        <pattern>*</pattern>
+        <template>Hello</template>
+    </category>
 
-<category>
-<pattern>Bye</pattern>
-<template><srai>THANKYOU FOR USING AIRA</srai></template>
-</category>
+    <category>
+        <pattern>Hi</pattern>
+        <template>
+            Greeting!<delay>3</delay>
+            We are going to look for book recommendations based on your interests.<delay>4</delay>
+            I will list some topics, and you can tell me the one that interests you most.<delay>4</delay>
+            <reply>
+                <text>Mystery</text>
+                <postback>Mystery</postback>
+            </reply>
 
-<category>
-<pattern>HI THERE</pattern>
-<template><srai>HELLO</srai></template>
-</category>
+            <reply>
+                <text>Science Fiction</text>
+                <postback>Science Fiction</postback>
+            </reply>
 
-<category>
-<pattern>HOWDY</pattern>
-<template><srai>HELLO</srai></template>
-</category>
+            <reply>
+                <text>Biography</text>
+                <postback>Biography</postback>
+            </reply>
+        </template>
+    </category>
 
-<category>
-<pattern>HOLA</pattern>
-<template><srai>HELLO</srai></template>
-</category>
+    <category>
+        <pattern>Hello</pattern>
+        <template>
+            Well hello there.<delay>3</delay>
+            We are going to look for book recommendations based on your interests.<delay>4</delay>
+            I will list some topics, and you can tell me the one that interests you most.<delay>4</delay>
+            <reply>
+                <text>Mystery</text>
+                <postback>Mystery</postback>
+            </reply>
 
-<category>
-<pattern>How are you</pattern>
-<template>I am Good</template>
-</category>
+            <reply>
+                <text>Science Fiction</text>
+                <postback>Science Fiction</postback>
+            </reply>
 
-<category>
-<pattern>What time is it?</pattern>
-<template>It's currently <get_time/>.</template>
-</category>
+            <reply>
+                <text>Biography</text>
+                <postback>Biography</postback>
+            </reply>
+        </template>
+    </category>
 
-<category>
-<pattern>What's the weather like today?</pattern>
-<template>The weather today is <get_weather />.</template>
-</category>
+    <category>
+        <pattern>Hey</pattern>
+        <template>
+            Well hello there.<delay>3</delay>
+            We are going to look for book recommendations based on your interests.<delay>4</delay>
+            I will list some topics, and you can tell me the one that interests you most.<delay>4</delay>
+            <reply>
+                <text>Mystery</text>
+                <postback>Mystery</postback>
+            </reply>
 
-<category>
-<pattern>What should I have for dinner?</pattern>
-<template> <srai>How about trying <get_random_dinner_suggestion /> for dinner tonight?</srai>
-</template>
-</category>
+            <reply>
+                <text>Science Fiction</text>
+                <postback>Science Fiction</postback>
+            </reply>
 
-<category>
-<pattern>Can you tell me the latest news?</pattern>
-<template><srai>Sure, here are some of the top headlines: <get_latest_news /></srai></template>
-</category>
+            <reply>
+                <text>Biography</text>
+                <postback>Biography</postback>
+            </reply>
+        </template>
+    </category>
 
-<category>
-<pattern>Where is the nearest coffee shop?</pattern>
-<template><srai>The nearest coffee shop is located at <get_nearest_coffee_shop_location />.</srai></template>
-</category>
+    <!-- Recommendation categories for books -->
+    <category>
+        <pattern>Mystery</pattern>
+        <template>
+            Great choice! Mystery books are thrilling.<delay>4</delay>
+            Now, would you like a classic mystery or a modern mystery?<delay>4</delay>
+            <reply>
+                <text>Classic Mystery</text>
+                <postback>Classic Mystery</postback>
+            </reply>
 
-<category>
-<pattern>What's the best way to get to the airport?</pattern>
-<template><srai>The most convenient way to get to the airport is by <get_best_transport_mode_to_airport />.</srai></template>
-</category>
+            <reply>
+                <text>Modern Mystery</text>
+                <postback>Modern Mystery</postback>
+            </reply>
+        </template>
+    </category>
 
-<category>
-<pattern>How can I stay fit and healthy?</pattern>
-<template><srai>You can maintain your fitness and health by <get_fitness_tips />.</srai></template>
-</category>
+    <category>
+        <pattern>Science Fiction</pattern>
+        <template>
+            Excellent! Science fiction is a fascinating genre.<delay>4</delay>
+            Would you prefer space exploration or futuristic technology in your science fiction book?<delay>4</delay>
+            <reply>
+                <text>Space Exploration</text>
+                <postback>Space Exploration</postback>
+            </reply>
 
-<category>
-<pattern>Recommend a good movie to watch.</pattern>
-<template><srai>I recommend watching "<get_movie_recommendation />." It's a great choice for a movie night!</srai></template>
-</category>
+            <reply>
+                <text>Futuristic Technology</text>
+                <postback>Futuristic Technology</postback>
+            </reply>
+        </template>
+    </category>
 
-<category>
-<pattern>What's the latest smartphone on the market?</pattern>
-<template><srai>The latest smartphone on the market is the "<get_latest_smartphone_model />." It has some impressive features!</srai></template>
-</category>
+    <category>
+        <pattern>Biography</pattern>
+        <template>
+            Wonderful choice! Biographies provide valuable insights.<delay>4</delay>
+            Would you like to read about a historical figure or a contemporary personality?<delay>4</delay>
+            <reply>
+                <text>Historical Figure</text>
+                <postback>Historical Figure</postback>
+            </reply>
 
-<category>
-<pattern>How's the traffic today?</pattern>
-<template><srai>The traffic today is <get_traffic_status />. It's currently <get_traffic_time_estimate /> to reach your destination.</srai></template>
-</category>
+            <reply>
+                <text>Contemporary Personality</text>
+                <postback>Contemporary Personality</postback>
+            </reply>
+        </template>
+    </category>
 
-<category>
-<pattern>What's a good way to relieve stress?</pattern>
-<template><srai>A great way to relieve stress is by <get_stress_relief_tips />.</srai></template>
-</category>
+    <!-- Book recommendations based on user preferences -->
+    <category>
+        <pattern>Classic Mystery</pattern>
+        <template>
+            I recommend "Sherlock Holmes" by Arthur Conan Doyle. It's a classic mystery series.
+        </template>
+    </category>
 
-<category>
-<pattern>Where can I find a good deal on electronics?</pattern>
-<template><srai>You can find great deals on electronics at <get_electronics_deal_location />. Don't forget to check online deals too!</srai></template>
-</category>
+    <category>
+        <pattern>Modern Mystery</pattern>
+        <template>
+            I suggest "Gone Girl" by Gillian Flynn. It's a gripping modern mystery novel.
+        </template>
+    </category>
 
-<category>
-<pattern>Can you suggest a fun hobby to try?</pattern>
-<template><srai>How about trying <get_random_hobby_suggestion />? It can be a great way to relax and learn something new.</srai></template>
-</category>
+    <category>
+        <pattern>Space Exploration</pattern>
+        <template>
+            You might enjoy "Dune" by Frank Herbert. It's a space exploration and science fiction masterpiece.
+        </template>
+    </category>
 
-<category>
-<pattern>What's a good book to read for personal development?</pattern>
-<template><srai>I recommend reading "<get_personal_development_book_suggestion />." It's a valuable resource for self-improvement.</srai></template>
-</category>
+    <category>
+        <pattern>Futuristic Technology</pattern>
+        <template>
+            Consider reading "Neuromancer" by William Gibson. It's a classic in futuristic technology and cyberpunk.
+        </template>
+    </category>
 
-<category>
-<pattern>How can I plan a memorable family outing?</pattern>
-<template><srai>Planning a memorable family outing involves <get_family_outing_planning_tips />.</srai></template>
-</category>
+    <category>
+        <pattern>Historical Figure</pattern>
+        <template>
+            I recommend "Steve Jobs" by Walter Isaacson. It's a biography of the iconic tech innovator.
+        </template>
+    </category>
 
-<category>
-<pattern>Do you have a recipe for a delicious dessert?</pattern>
-<template><srai>Sure, here's a recipe for a mouthwatering <get_random_dessert_recipe />.</srai></template>
-</category>
+    <category>
+        <pattern>Contemporary Personality</pattern>
+        <template>
+            Check out "Becoming" by Michelle Obama. It's a compelling biography of the former First Lady.
+        </template>
+    </category>
 
-<category>
-<pattern>What's the best way to care for a new puppy?</pattern>
-<template><srai>Caring for a new puppy involves <get_puppy_care_tips />. It's important to provide love and attention.</srai></template>
-</category>
+    <!-- Thank you responses -->
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            You're welcome! I hope you find the recommended book enjoyable.
+        </template>
+    </category>
 
-<category>
-<pattern>How can I find a good therapist?</pattern>
-<template><srai>Finding a good therapist involves <get_therapist_finding_tips />. You can also ask for recommendations from friends or check online directories.</srai></template>
-</category>
-
-<category>
-<pattern>What are some techniques for managing stress?</pattern>
-<template><srai>Managing stress can be achieved through <get_stress_management_techniques />. It's important to find what works best for you.</srai></template>
-</category>
-
-<category>
-<pattern>How can I cope with anxiety?</pattern>
-<template><srai>Coping with anxiety involves <get_anxiety_coping_strategies />. Remember to reach out to a mental health professional for support.</srai></template>
-</category>
-
-<category>
-<pattern>What can I do if I'm feeling depressed?</pattern>
-<template><srai>If you're feeling depressed, it's important to <get_depression_support_tips /> and consider talking to a therapist or counselor.</srai></template>
-</category>
-
-<category>
-<pattern>What are some self-care practices for mental health?
-</pattern>
-<template><srai>Practicing self-care for mental health includes <get_self_care_practices />. Prioritize self-care to improve your overall well-being.</srai></template>
-</category>
-
-<category>
-<pattern>How can I develop healthy coping strategies?</pattern>
-<template><srai>Developing healthy coping strategies involves <get_coping_strategies_development_tips />. Therapy can be a valuable resource in this journey.</srai></template>
-</category>
-
-<category>
-<pattern>What is mindfulness, and how can I practice it?</pattern>
-<template><srai>Mindfulness is <get_mindfulness_definition />. You can practice it by <get_mindfulness_practices /> for better mental health.</srai></template>
-</category>
-
-<category>
-<pattern> How can I support a friend or family member who is struggling with their mental health?</pattern>
-<template> <srai>Supporting a loved one with their mental health involves <get_emotional_support_tips />. Encourage them to seek professional help if needed.</srai></template>
-</category>
-
-<category>
-<pattern>Can you tell me a joke?</pattern>
-<template><srai>Sure, here's a joke for you: <get_random_joke /></srai></template>
-</category>
-
-<category>
-<pattern>Tell me something funny to brighten my day.</pattern>
-<template><srai>Of course! Here's a funny one: <get_random_funny_quote /></srai></template>
-</category>
-
-<category>
-<pattern>Can you suggest a daily morning routine?</pattern>
-<template><srai>A healthy morning routine might include <get_morning_routine_suggestion />. It sets a positive tone for the day.</srai></template>
-</category>
-
-<category>
-<pattern>What's a good workout routine for beginners?</pattern>
-<template><srai>A beginner's workout routine should include <get_beginner_workout_suggestion />. It's important to start gradually.</srai></template>
-</category>
-
-<category>
-<pattern> How can I create an effective study routine?</pattern>
-<template><srai>Creating an effective study routine involves <get_study_routine_tips />. Consistency and breaks are key.</srai></template>
-</category>
-
-<category>
-<pattern>What's a relaxing bedtime routine?</pattern>
-<template><srai>A relaxing bedtime routine might include <get_bedtime_routine_suggestion />. It promotes better sleep.</srai></template>
-</category>
-
-<category>
-<pattern>Tell me an interesting historical fact.</pattern>
-<template><srai>Did you know that <get_random_historical_fact />?</srai></template>
-</category>
-
-<category>
-<pattern>Who is your favorite historical figure?</pattern>
-<template><srai>One of my favorite historical figures is <get_random_historical_figure />. They had a significant impact on history.</srai></template>
-</category>
-
-<category>
-<pattern>What was a major event in world history?</pattern>
-<template><srai>A major event in world history was <get_major_world_history_event />. It shaped the course of nations and cultures.</srai></template>
-</category>
-
+    <category>
+        <pattern>THANKS</pattern>
+        <template>
+            You're welcome! I hope you find the recommended book enjoyable.
+        </template>
+    </category>
 
 </aiml>
-
